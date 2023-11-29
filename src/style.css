@@ -3,19 +3,23 @@ body {
   background-color: black;
   color: white; /* Set text color to white for better visibility */
 }
-.banner {
+.jumbotron {
   position: relative;
   width: 100%;
-  height: 20%;
+  height: auto;
   padding-top: none; /* Set the height as a percentage of the width (10% for a 10:1 ratio) */
-
-  overflow: hidden; /* Hide any content that overflows the banner */
+    align-content: center;
+    /* margin: 2rem; */
+  overflow: hidden; /*Hide any content that overflows the banner*/
 }
 
-.banner img {
+.jumbotron img {
   width: 100%; /* Make the image fill the entire width of the container */
-  height: 100px; /* Make the image fill the entire height of the container */
+  height: 100%; /* Make the image fill the entire height of the container */
   object-fit: cover; /* Maintain the aspect ratio while covering the entire container */
+}
+img.img-fluid{
+    height: 500px;
 }
 .card-container {
   display: flex;
